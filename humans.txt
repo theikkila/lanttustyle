@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Teemu Heikkilä -- Design and Code -- @sienikasvusto
+
+# THANKS
+
+    Lanttu ry
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+	Bootstrap
