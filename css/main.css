@@ -1,22 +1,160 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+	Lanttustyle - stylesheet
+	Author: sienikasvusto <teemu@lanttu.org>
    ========================================================================== */
 
+/*
+ Utility
+*/
 
+.no-padding{
+	padding: 0;
+}
 
+.no-margin{
+	margin: 0;
+}
 
+/*
+ Background-style
+*/
 
+html, body{
+	height: 100%;
+}
 
+body{
+	background-color: #F3F3F3;
+	padding: 0;
+}
 
+/*
+ Carousel
+*/
+.carousel{
+	background-color: #000;
+	margin-left: 0px;
+	margin-right: -20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	height: 150px;
+}
+.carousel-content{
+	
+}
+.carousel-description{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	height: 150px;
+	margin-left: 73%;
+	width: 27%;
+	background-color: #666;
+}
+/*
+ Blog
+*/
+.blog-item{
+	margin: 10px;
+}
 
+/* Large desktop */
+@media (min-width: 1200px) { 
 
+	.carousel{
+		margin-right: -30px;
+	}
+	
+	.carousel-description{
+		margin-left: 72.5%;
+		width: 27.5%;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
 
+	.carousel{
+		margin-right: -20px;
+	}
+	
+	.carousel-description{
+		margin-left: 72.2%;
+		width: 27.8%;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+	.carousel{
+		margin-right: 0px;
+	}	
+	
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+	.carousel{
+		margin-right: 0px;
+	}
+}
 
+/*
+ Containers
+*/
 
+.page-container{
+	min-height: 100%;
+	position: relative;
+}
 
+.main-container{
+	padding-bottom: 160px;
+	padding-top: 40px;
+	min-height: 100%;
+}
 
+.content-container{
+	background-color: #F68701;
+	padding: 0;
+	margin-bottom: 0;
+	min-height: 100%;
+}
 
+.blog-container{
+	background-color: #DBDBDB;
+}
 
+.orange-span{
+	bottom: 0;
+}
 
+.spacer{
+	height: 0px;
+}
+
+/*
+ Footer-styles
+*/
+
+.footer-of-page{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #202020;
+	color: #DDD;
+	height: 160px;
+	width: 100%;
+	clear: both;
+}
+
+.downbox{
+	margin-top: 20px;
+	border: 0px solid #FFF;
+	margin-left: 20px;
+}
