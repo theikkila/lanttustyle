@@ -30,6 +30,11 @@ body{
 	padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Jockey One', sans-serif; 
+}
+
 /*
  Carousel
 */
@@ -40,7 +45,7 @@ body{
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 0;
-	height: 150px;
+	height: 300px;
 }
 .carousel-content{
 	
@@ -49,11 +54,18 @@ body{
 	position: absolute;
 	padding: 0;
 	margin: 0;
-	height: 150px;
-	margin-left: 73%;
-	width: 27%;
-	background-color: #666;
+	height: 300px;
+	margin-left: 73%;	
+	background-color: #666;	
 }
+.carousel-description p{
+	padding: 20px;
+	color: #ffffff;
+	font-family: 'Jockey One', sans-serif;
+	font-size: 16pt;
+	line-height:120%
+}
+
 /*
  Blog
 */
@@ -143,6 +155,7 @@ body{
 */
 
 .footer-of-page{
+	font-family: 'Jockey One', sans-serif;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -158,3 +171,17 @@ body{
 	border: 0px solid #FFF;
 	margin-left: 20px;
 }
+
+.some-right
+{
+	margin-left: 155px;
+	width: 220px;
+}
+
+.some-right img
+{
+	border: 0px;
+	margin-right: 10px;
+}
+
+
