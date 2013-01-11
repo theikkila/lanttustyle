@@ -5,4 +5,9 @@ function resizeSpacer(){
 
 $(document).ready(function(){
 	//setInterval(resizeSpacer, 100);
+	
+	$('.carousel').carousel({
+		interval: 8000
+	})
+	
 });
