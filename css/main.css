@@ -2,7 +2,7 @@
 
 /* ==========================================================================
 	Lanttustyle - stylesheet
-	Author: sienikasvusto <teemu@lanttu.org>
+	Author: sienikasvusto <teemu@lanttu.org> & Joona <joona@lanttu.org>
    ========================================================================== */
 
 /*
@@ -45,25 +45,27 @@ h1, h2, h3, h4, h5, h6
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 0;
-	height: 300px;
 }
 .carousel-content{
-	
+	margin-left: 0px;
 }
 .carousel-description{
 	position: absolute;
 	padding: 0;
 	margin: 0;
-	height: 300px;
+
 	margin-left: 73%;	
 	background-color: #666;	
+	background: rgba(102, 102, 102, 0.8);
 }
 .carousel-description p{
 	padding: 20px;
 	color: #ffffff;
 	font-family: 'Jockey One', sans-serif;
 	font-size: 16pt;
-	line-height:120%
+	line-height: 120%;
+	position: relative;
+	z-index: 4;
 }
 
 /*
@@ -83,6 +85,50 @@ h1, h2, h3, h4, h5, h6
 	.carousel-description{
 		margin-left: 72.5%;
 		width: 27.5%;
+		height: 300px;
+	}
+	
+	.carousel-content  {
+		width: 1200px;
+		height: 300px;
+	}
+	
+	.some-right
+	{
+		margin-left: 155px;
+		margin-top: 20px;
+		width: 220px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: -20px;
+		margin-right: 15px;
+	}
+	
+}
+
+@media (min-width: 979px) and (max-width: 1199px) { 
+	.carousel-description{
+		margin-left: 73%;
+		width: 27%;
+		height: 235px;
+	}
+	
+	.some-right
+	{
+		margin-left: 95px;
+		margin-top: 20px;
+		width: 220px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-right: 15px;
 	}
 }
  
@@ -96,16 +142,68 @@ h1, h2, h3, h4, h5, h6
 	.carousel-description{
 		margin-left: 72.2%;
 		width: 27.8%;
+		height: 181px;
 	}
+	
+	.some-right
+	{
+		margin-left: 45px;
+		margin-top: 20px;
+		width: 203px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: 10px;
+	}
+	
+	.logo
+	{
+		margin-top: -30px !important;
+	}
+
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	
 	.carousel{
-		margin-right: 0px;
+		margin-right: 0px;	
 	}	
 	
+	.some-right
+	{
+		text-align: right;
+		position: relative;
+		top: -100px;
+		right: 20px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: 30px;
+	}
+	
+	.logo
+	{
+		margin-left: 10px;
+		margin-top: -30px !important;
+	}
+	
+	.btn-navbar
+	{
+		margin-right: 20px !important;
+	}
+	
+	.nav li
+	{
+		margin-left: 15px;
+	}
+
 }
  
 /* Landscape phones and down */
@@ -113,6 +211,12 @@ h1, h2, h3, h4, h5, h6
 	
 	.carousel{
 		margin-right: 0px;
+		
+	}
+	
+	.btn-navbar
+	{
+		float: left;
 	}
 }
 
@@ -172,16 +276,23 @@ h1, h2, h3, h4, h5, h6
 	margin-left: 20px;
 }
 
-.some-right
-{
-	margin-left: 155px;
-	width: 220px;
-}
-
 .some-right img
 {
 	border: 0px;
 	margin-right: 10px;
 }
+
+.logo{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.post_date
+{
+	font-weight: bold;
+	font-size: 9pt;
+	margin-bottom: 10px;
+	margin-top: -10px;
+}	
 
 
