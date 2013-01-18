@@ -1,11 +1,338 @@
 /*
-Theme Name:         Roots
-Theme URI:          http://www.rootstheme.com/
-Description:        Roots is a starting WordPress theme made for developers that's based on HTML5 Boilerplate and Bootstrap. <a href="https://github.com/retlehs/roots/contributors">Contribute on GitHub</a>
-Version:            6.2.0
-Author:             Ben Word
-Author URI:         http://benword.com/
+Theme Name:         Lanttustyle
+Theme URI:          http://www.lanttu.org/
+Description:        Lanttustyle. Uusi lantun teema. Kehitä teemaa lisää: <a href="https://github.com/Sienikasvusto/lanttustyle">Lanttustyle GitHubissa</a>
+Version:            0.1.0
+Author:             Teemu Heikkilä, Joona Paavola
+Author URI:         http://github.com/Sienikasvusto
 
 License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
+
+
+
+
+/* ==========================================================================
+	Lanttustyle - stylesheet
+	Author: sienikasvusto <teemu@lanttu.org> & Joona <joona@lanttu.org>
+   ========================================================================== */
+
+/*
+ Utility
+*/
+
+.no-padding{
+	padding: 0;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+/*
+ Background-style
+*/
+
+html, body{
+	height: 100%;
+}
+
+body{
+	background-color: #F3F3F3;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Jockey One', sans-serif; 
+}
+/*
+ Header
+*/
+.matias{
+	width: 373px;
+	height: 299px;
+	background-image: url(../img/matias_iso.png);
+	position: relative;
+}
+
+/*
+ Carousel
+*/
+.carousel{
+	background-color: #000;
+	margin-left: 0px;
+	margin-right: -20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.d-item{
+	display: none;
+}
+.carousel-content{
+	margin-left: 0px;
+}
+.carousel-description{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+
+	margin-left: 73%;	
+	background-color: #000;	
+	background: rgba(30, 30, 30, 0.8);
+}
+.carousel-description div{
+	padding: 20px;
+	color: #ffffff;
+	font-family: 'Jockey One', sans-serif;
+	font-size: 16pt;
+	line-height: 120%;
+	position: relative;
+	z-index: 4;
+}
+
+/*
+ Blog
+*/
+.blog-item{
+	margin: 10px;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+	.carousel{
+		margin-right: -30px;
+	}
+	
+	.carousel-description{
+		margin-left: 72.5%;
+		width: 27.5%;
+		height: 300px;
+	}
+	
+	.carousel-content  {
+		width: 1200px;
+		height: 300px;
+	}
+	
+	.some-right
+	{
+		margin-left: 155px;
+		margin-top: 20px;
+		width: 220px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: -20px;
+		margin-right: 15px;
+	}
+	.matias{
+		right: -10px;
+	}
+}
+
+@media (min-width: 979px) and (max-width: 1199px) { 
+	.carousel-description{
+		margin-left: 73%;
+		width: 27%;
+		height: 235px;
+	}
+	
+	.some-right
+	{
+		margin-left: 95px;
+		margin-top: 20px;
+		width: 220px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-right: 15px;
+	}
+	.matias{
+		top: 10px;
+		right: 10px;
+		width: 302px;
+		height: 242px;
+		background-image: url(../img/matias_keski.png);
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+	.carousel{
+		margin-right: -20px;
+	}
+	
+	.carousel-description{
+		margin-left: 72.2%;
+		width: 27.8%;
+		height: 181px;
+	}
+	
+	.some-right
+	{
+		margin-left: 45px;
+		margin-top: 20px;
+		width: 203px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: 10px;
+	}
+	
+	.logo
+	{
+		margin-top: -30px !important;
+	}
+	.matias{
+		right: -10px;
+		width: 224px;
+		height: 179px;
+		background-image: url(../img/matias_pieni.png);
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+	.carousel{
+		margin-right: 0px;	
+	}	
+	
+	.some-right
+	{
+		text-align: right;
+		position: relative;
+		top: -100px;
+		right: 20px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: 30px;
+	}
+	
+	.logo
+	{
+		margin-left: 10px;
+		margin-top: -30px !important;
+	}
+	
+	.btn-navbar
+	{
+		margin-right: 20px !important;
+	}
+	
+	.nav li
+	{
+		margin-left: 15px;
+	}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+	.carousel{
+		margin-right: 0px;
+		
+	}
+	
+	.btn-navbar
+	{
+		float: left;
+	}
+}
+
+/*
+ Containers
+*/
+
+.page-container{
+	min-height: 100%;
+	position: relative;
+}
+
+.main-container{
+	padding-bottom: 160px;
+	padding-top: 40px;
+	min-height: 100%;
+}
+
+.content-container{
+	background-color: #F68701;
+	padding: 0;
+	margin-bottom: 0;
+	min-height: 100%;
+}
+
+.blog-container{
+	background-color: #DBDBDB;
+}
+
+.orange-span{
+	bottom: 0;
+}
+
+.spacer{
+	height: 0px;
+}
+
+/*
+ Footer-styles
+*/
+
+.footer-of-page{
+	font-family: 'Jockey One', sans-serif;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #202020;
+	color: #DDD;
+	height: 160px;
+	width: 100%;
+	clear: both;
+}
+
+.downbox{
+	margin-top: 20px;
+	border: 0px solid #FFF;
+	margin-left: 20px;
+}
+
+.some-right img
+{
+	border: 0px;
+	margin-right: 10px;
+}
+
+.logo{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.post_date
+{
+	font-weight: bold;
+	font-size: 9pt;
+	margin-bottom: 10px;
+	margin-top: -10px;
+}	
+
+
