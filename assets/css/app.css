@@ -1,9 +1,26 @@
+
+/* ==========================================================================
+	Lanttustyle - stylesheet
+	Author: sienikasvusto <teemu@lanttu.org> & Joona <joona@lanttu.org>
+   ========================================================================== */
+
 /* ==========================================================================
    Base
    ========================================================================== */
 
-body { }
+html, body{
+	height: 100%;
+}
 
+body{
+	background-color: #F3F3F3;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Jockey One', sans-serif; 
+}
 
 
 /* =============================================================================
@@ -12,17 +29,94 @@ body { }
 
 #banner { }
 
-/* Fixed Topbar Navigation */
-body.top-navbar { padding-top: 60px; }
-body.admin-bar .navbar-fixed-top { top: 28px; }
 
+.logo{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.brand{
+	padding: 9px !important;
+}
+
+/* =============================================================================
+   Carousel
+   ========================================================================== */
+
+.carousel{
+	background-color: #000;
+	margin-left: 0px;
+	margin-right: -20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.d-item{
+	display: none;
+}
+.carousel-content{
+	margin-left: 0px;
+}
+.carousel-description{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+
+	margin-left: 73%;	
+	background-color: #000;	
+	background: rgba(30, 30, 30, 0.8);
+}
+.carousel-description div{
+	padding: 20px;
+	color: #ffffff;
+	font-family: 'Jockey One', sans-serif;
+	font-size: 16pt;
+	line-height: 120%;
+	position: relative;
+	z-index: 4;
+}
 
 
 /* ==========================================================================
-   Content
+   Containers
    ========================================================================== */
 
-#content { }
+
+.page-container{
+	min-height: 100%;
+	position: relative;
+}
+
+.main-container{
+	padding-bottom: 160px;
+	padding-top: 40px;
+	min-height: 100%;
+}
+
+.content-container{
+	background-color: #F68701;
+	padding: 0;
+	margin-bottom: 0;
+	min-height: 100%;
+}
+
+.blog-container{
+	background-color: #DBDBDB;
+	padding-left: 30px;
+	margin-left: 0px;
+	padding-right: 30px;
+	width: 810px;
+	min-height: 300px;
+}
+
+.orange-span{
+	bottom: 0;
+}
+
+.spacer{
+	height: 0px;
+}
 
 
 
@@ -53,12 +147,61 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
 .hentry footer { }
 
 
+.page-header {
+
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 0px;
+	margin: 0px;
+}
+
+.blog-container p
+{
+	padding-bottom: 20px;
+}
+
+.blog-item{
+	margin: 10px;
+}
+
+.post_date
+{
+	font-weight: bold;
+	font-size: 9pt;
+	margin-bottom: 10px;
+	margin-top: -10px;
+}	
+
+
 
 /* ==========================================================================
    Footer
    ========================================================================== */
 
-#content-info { }
+.footer-of-page{
+	font-family: 'Jockey One', sans-serif;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #202020;
+	color: #DDD;
+	height: 160px;
+	width: 100%;
+	clear: both;
+}
+
+.downbox{
+	margin-top: 20px;
+	border: 0px solid #FFF;
+	margin-left: 20px;
+}
+
+.some-right img
+{
+	border: 0px;
+	margin-right: 10px;
+}
+
 
 
 
@@ -67,10 +210,6 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
 
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
-figure.alignnone { margin-left: 0; margin-right: 0; }
 
 
 
@@ -78,9 +217,161 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
-@media (max-width: 979px) {
-  /* Fix top padding when using the responsive grid with the fixed topbar */
-  body.top-navbar {
-    padding-top: 0;
-  }
+@media (min-width: 1200px) { 
+
+	.carousel{
+		margin-left: -30px;
+		margin-right: 0px;
+	}
+	
+	.carousel-description{
+		margin-left: 72.5%;
+		width: 27.5%;
+		height: 300px;
+	}
+	
+	.carousel-content  {
+		width: 1200px;
+		height: 300px;
+	}
+	
+	.some-right
+	{
+		margin-left: 155px;
+		margin-top: 20px;
+		width: 220px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: -20px;
+		margin-right: 15px;
+	}
+	.matias{
+		right: -10px;
+	}
+}
+
+@media (min-width: 979px) and (max-width: 1199px) { 
+	.carousel-description{
+		margin-left: 73%;
+		width: 27%;
+		height: 235px;
+	}
+	
+	.some-right
+	{
+		margin-left: 95px;
+		margin-top: 20px;
+		width: 220px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-right: 15px;
+	}
+	.matias{
+		top: 10px;
+		right: 10px;
+		width: 302px;
+		height: 242px;
+		background-image: url(../img/matias_keski.png);
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+	.carousel{
+		margin-right: -20px;
+	}
+	
+	.carousel-description{
+		margin-left: 72.2%;
+		width: 27.8%;
+		height: 181px;
+	}
+	
+	.some-right
+	{
+		margin-left: 45px;
+		margin-top: 20px;
+		width: 203px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: 10px;
+	}
+	
+	.logo
+	{
+		margin-top: -30px !important;
+	}
+	.matias{
+		right: -10px;
+		width: 224px;
+		height: 179px;
+		background-image: url(../img/matias_pieni.png);
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+	.carousel{
+		margin-right: 0px;	
+	}	
+	
+	.some-right
+	{
+		text-align: right;
+		position: relative;
+		top: -100px;
+		right: 20px;
+	}
+	
+	.nav-icon
+	{
+		float: left;
+		margin-top: 8px;
+		margin-left: 30px;
+	}
+	
+	.logo
+	{
+		margin-left: 10px;
+		margin-top: -30px !important;
+	}
+	
+	.btn-navbar
+	{
+		margin-right: 20px !important;
+	}
+	
+	.nav li
+	{
+		margin-left: 15px;
+	}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+	.carousel{
+		margin-right: 0px;
+		
+	}
+	
+	.btn-navbar
+	{
+		float: left;
+	}
 }

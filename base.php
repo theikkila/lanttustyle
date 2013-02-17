@@ -18,7 +18,7 @@
       <div class="row">
         <div class="span8 logo">
           <!-- <h1>Lanttu:ry</h1> -->
-          <img src="img/lanttu.png" alt="Lanttu ry">
+          <img src="/wp-content/themes/lanttustyle/assets/img/lanttu.png" alt="Lanttu ry">
         </div>
         <div class="span4 hidden-phone">
           <!--Matias-->
@@ -36,13 +36,13 @@
             <div class="span12 carousel-content">
               
               <div class="item active">
-                <img src="img/banneri01.jpg" alt=""/>
+                <img src="/wp-content/themes/lanttustyle/assets/img/banneri01.jpg" alt=""/>
               </div>
               <div class="item">
-                <img src="img/banneri02.jpg" alt=""/>
+                <img src="/wp-content/themes/lanttustyle/assets/img/banneri02.jpg" alt=""/>
               </div>
               <div class="item">
-                <img src="img/banneri03.jpg" alt=""/>
+                <img src="/wp-content/themes/lanttustyle/assets/img/banneri03.jpg" alt=""/>
               </div>
             </div>
             
