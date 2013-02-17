@@ -8,7 +8,7 @@
       </a>
       <a class="brand" href="<?php echo home_url(); ?>/">
         <?php //bloginfo('name'); ?>
-		<img src="/wp-content/themes/lanttustyle/assets/img/lanttu_icon.png" alt="" />
+		<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/img/lanttu_icon.png" alt="" />
       </a>
       <nav id="nav-main" class="nav-collapse" role="navigation">
         <?php

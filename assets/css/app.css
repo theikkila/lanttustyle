@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6
 	padding-right: 30px;
 	width: 810px;
 	min-height: 300px;
+	padding-bottom: 30px;
 }
 
 .orange-span{
@@ -155,14 +156,11 @@ h1, h2, h3, h4, h5, h6
 	margin: 0px;
 }
 
-.blog-container p
-{
-	padding-bottom: 20px;
+.blog-item h1 a{
+	color: #333 !important;
 }
 
-.blog-item{
-	margin: 10px;
-}
+
 
 .post_date
 {

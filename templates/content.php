@@ -12,7 +12,7 @@
                 <div class="span8">
                   <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                   <div class="post_date"><?php get_template_part('templates/entry-meta'); ?></div>
-                  <p><?php the_excerpt(); ?></p>
+                  <p><?php the_content(); ?></p>
                 </div>
               </div>
 <!-- /blog-item -->
