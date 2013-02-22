@@ -21,7 +21,7 @@ $(document).ready(function(){
 	
 	var items = $('.carousel-description > .d-item');
 	$('.carousel').carousel({
-		interval: 5000
+		interval: 8000
 	}).on('slide', function(){
 		//console.log(items.length);
 		var itemcount = items.length;

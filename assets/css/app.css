@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6
 	padding: 20px;
 	color: #ffffff;
 	font-family: 'Jockey One', sans-serif;
-	font-size: 16pt;
+	font-size: 22pt;
 	line-height: 120%;
 	position: relative;
 	z-index: 4;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6
 	padding-left: 30px;
 	margin-left: 0px;
 	padding-right: 30px;
-	width: 810px;
+	width: 834px;
 	min-height: 300px;
 	padding-bottom: 30px;
 }
@@ -223,8 +223,8 @@ h1, h2, h3, h4, h5, h6
 	}
 	
 	.carousel-description{
-		margin-left: 72.5%;
-		width: 27.5%;
+		margin-left: 74.5%;
+		width: 25.5%;
 		height: 300px;
 	}
 	

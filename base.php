@@ -47,9 +47,9 @@
             </div>
             
             <div class="span3 carousel-description">
-              <div class="d-item active">Tikka haastattelee</div>
-              <div class="d-item">Nörttejä rivissä</div>
-              <div class="d-item">Setä puhuu</div>      
+              <div class="d-item active">"Kaikki lähti siitä, kun joskus 2003 haluttiin järjestää omat assyt"<br />-Joona-</div>
+              <div class="d-item">"Pääorganisaattorin viittaa on yritetty minulle asettaa, mutta hyvällä hengellä tätä on tehty koko porukan kesken"<br />-Joonas-</div>
+              <div class="d-item">"On kiva seurata tapahtuman ja organisaation kehittymistä, siitä saa lisää virtaa tähän hommaan"<br />-Joni-</div>      
             </div>
             <!-- /carousel-item -->
           </div>
