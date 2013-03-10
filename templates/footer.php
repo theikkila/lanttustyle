@@ -3,17 +3,17 @@
 		<div class="row">
 			<div class="span4 downbox">
 				Lanttu ry</br>
-				Polttolinja 19 D 33</br>
-				40520 JYVÄSKYLÄ</br>
+				Päiväkummuntie 4</br>
+				05400 Jokela</br>
 				<?php //echo date('Y'); ?> <?php //bloginfo('name'); ?>	
 			</div>
 			<div class="span4 downbox">
-				Liity maililistalle
+				&nbsp;
 			</div>
 			<div class="span4 some-right">
-				<a href="http://www.facebook.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/picons46.png" alt="Facebook" /></a>
-				<a href="http://www.twitter.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/picons43.png" alt="Twitter" /></a>
-				<a href="http://www.youtube.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/picons58.png" alt="Youtube" /></a>
+				<a href="http://www.facebook.com/groups/lanttury/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/picons46.png" alt="Facebook" /></a>
+				<a href="https://twitter.com/lanttury/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/picons43.png" alt="Twitter" /></a>
+				<a href="http://www.youtube.com/user/TourLANchannel/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/picons58.png" alt="Youtube" /></a>
 			</div>
 		</div>
 	</div>
